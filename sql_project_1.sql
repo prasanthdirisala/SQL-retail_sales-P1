@@ -5,9 +5,9 @@ create table retail_sales(
 							sale_date date,
 							sale_time time,
 							customer_id int,
-							gender varchar(20),
+							gender varchar(15),
 							age int,
-							category varchar(20),
+							category varchar(35),
 							quantiy int,
 							price_per_unit float,
 							cogs float,
@@ -174,5 +174,6 @@ select
 	COUNT(*) as total_orders
 from hourly_sale
 GROUP By shift;
+
 
 --- END OF PROJECT ---
